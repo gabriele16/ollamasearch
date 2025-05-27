@@ -5,13 +5,16 @@ If you want to run your own LLM locally on your Orin Nano, this repo provides th
 
 ## Instructions
 
-1. **Create new conda env and install dependencies**
+1. **Create new conda env, pull ollama and install dependencies**
 
 ```
 conda create -n webagents python=3.10 -y
 conda activate webagents
 pip install -r requirements.txt
+ollama pull llama3.2:3b
 ```
+
+
 
 2. **Set-up SearchXNG with docker**
 
