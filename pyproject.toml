@@ -1,0 +1,37 @@
+[project]
+name = "ollamasearch"
+version = "0.1.0"
+description = "An ollama-based search & summarization agent swarm"
+authors = [
+    {name = "Gabriele Tocci", email = "gabrielet85@gmail.com"},
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+dependencies = [
+  "requests>=2.31.0",
+  "beautifulsoup4>=4.11.1",
+  "crawl4ai>=0.6.0",
+  "ollama>=0.4.8",
+  "pyyaml>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-mock>=3.10"
+]
+
+[project.scripts]
+# Console entrypoint: `run-swarm-agent`
+run-agent-swarm = "ollamasearch.run_agent_swarm:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ollamasearch*"]
+

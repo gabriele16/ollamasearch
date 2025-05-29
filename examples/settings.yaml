@@ -1,0 +1,4 @@
+model_name: llama3.2:latest
+max_urls: 1
+max_iterations: 1
+query: "Who is Roger Federer?"

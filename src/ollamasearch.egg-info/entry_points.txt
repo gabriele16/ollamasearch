@@ -1,0 +1,2 @@
+[console_scripts]
+run-agent-swarm = ollamasearch.run_agent_swarm:main
