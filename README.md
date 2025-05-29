@@ -1,11 +1,13 @@
 # ollamasearch
-Ollama-based agent to search the web locally using SearXNG
+Ollama-based agent to search the web locally using SearXNG and Crawl4AI
 
 If you want to run your own LLM locally on your Jetson Orin Nano Super, this repo provides the instructions you need and more.
 
 ## Instructions
 
-0. **Make sure that you have set up the Jetson if not done so already and that you can run ollama:
+0. **Make sure that you have set up the Jetson if not done so already and that you can run ollama:**
+
+See for example the tutorial to set up Ollama on the jetson below.
  - https://www.jetson-ai-lab.com/tutorial_ollama.html
 
 1. **Create new conda env, pull an LLM from https://ollama.com/search and install dependencies**
