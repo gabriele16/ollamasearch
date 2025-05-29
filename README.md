@@ -1,7 +1,7 @@
 # ollamasearch
 Ollama-based agent to search the web locally using SearXNG and Crawl4AI
 
-If you want to run your own LLM locally on your Jetson Orin Nano Super, this repo provides the instructions you need and more.
+If you want to run your own LLM locally on your Jetson Orin Nano Super, this repo enables you to do it. Here's how you set it up.
 
 ## Instructions
 
