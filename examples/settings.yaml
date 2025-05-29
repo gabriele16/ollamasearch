@@ -2,3 +2,6 @@ model_name: llama3.2:latest
 max_urls: 1
 max_iterations: 1
 query: "What are the latest news in Switzerland?"
+stream: true
+ollama_options:
+  - temperature: 0.2

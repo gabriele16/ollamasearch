@@ -3,7 +3,7 @@ name = "ollamasearch"
 version = "0.1.0"
 description = "An ollama-based search & summarization agent swarm"
 authors = [
-    {name = "Gabriele Tocci", email = "gabrielet85@gmail.com"},
+    {name = "Gabriele Tocci", email = "nan@nan.com"},
 ]
 readme = "README.md"
 license = { text = "MIT" }

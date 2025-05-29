@@ -1,11 +1,14 @@
 # ollamasearch
 Ollama-based agent to search the web locally using SearXNG
 
-If you want to run your own LLM locally on your Orin Nano, this repo provides the instructions you need and more.
+If you want to run your own LLM locally on your Jetson Orin Nano Super, this repo provides the instructions you need and more.
 
 ## Instructions
 
-1. **Create new conda env, pull ollama and install dependencies**
+0. **Make sure that you have set up the Jetson if not done so already and that you can run ollama:
+ - https://www.jetson-ai-lab.com/tutorial_ollama.html
+
+1. **Create new conda env, pull an LLM from https://ollama.com/search and install dependencies**
 
 ```
 conda create -n webagents python=3.10 -y
@@ -13,7 +16,6 @@ conda activate webagents
 pip install -r requirements.txt
 ollama pull llama3.2:3b
 ```
-
 
 
 2. **Set-up SearchXNG with docker**
@@ -58,18 +60,18 @@ curl -kLX GET --data-urlencode q='test query' \
 
 3. **Set-up SearXNG with docker**
 
-Run an example to check that everything is working and you should see that the ollama is searching the web with new info on graphene.
+Run an example to check that everything is working and you should see that the ollama is searching the web.
 
 ```
-python web_agent.py "latest graphene breakthroughs"
+run-agent-swarm -c examples/settings.yaml -o output.md
 ```
 
 # Credits
 
-Inspired entirely by Matt Williams' video below
+Inspired by Matt Williams' video
 
 [![Watch the video](https://img.youtube.com/vi/GMlSFIp1na0/maxresdefault.jpg)](https://www.youtube.com/watch?v=GMlSFIp1na0&t=85s)
 
-Check also the repo for an implementation in typescript and much more:
+Check also the repo for an implementation in typescript and more:
 
  - https://github.com/technovangelist/videoprojects
